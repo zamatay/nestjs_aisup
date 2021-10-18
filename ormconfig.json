@@ -1,0 +1,15 @@
+{
+  "type": "mssql",
+  "host": "192.168.0.12",
+  "username": "sa",
+  "password": "ggyyndk",
+  "database": "vkb_test1",
+  "entities": ["**/**/**.entity{.ts,.js}"],
+  "synchronize": false,
+  "options": {
+    "encrypt": false,
+    "enableArithAbort": true,
+    "isolation": 0,
+    "connectionIsolationLevel": 0
+  }
+}
