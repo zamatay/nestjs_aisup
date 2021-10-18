@@ -10,7 +10,7 @@ export class UserService {
     constructor(@InjectRepository(UserEntity) private userRepository: Repository<UserEntity>) {
     }
 
-    async getUserByEmail(email: string): Promise<UserEntity> {
+    async getUserByEmail(email: string): Promise<UserEntity[]> {
         return await this.userRepository.find({
             relations: ['StaffEntity'],
             where: {StaffEntity: {email}

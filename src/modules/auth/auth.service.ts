@@ -22,8 +22,8 @@ export class AuthService {
 
     }
 
-    async getUserByName(name: string){
-        return await UserService.getUserByEmail(name)
+    async getUserByName(name: string): Promise<UserEntity[]>{
+        return await this.userService.getUserByEmail(name);
     }
 
 }
